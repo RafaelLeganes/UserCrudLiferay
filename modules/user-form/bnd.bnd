@@ -1,0 +1,4 @@
+Bundle-Name: user-form
+Bundle-SymbolicName: com.sinensia
+Bundle-Version: 1.0.0
+Export-Package: com.sinensia.constants
