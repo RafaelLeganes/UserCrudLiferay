@@ -73,6 +73,15 @@ public class LibroLocalServiceWrapper
 	}
 
 	@Override
+	public void addNewLibro(
+		long groupId, long companyId, long userId, String userName,
+		String nombre, String titulo) {
+
+		_libroLocalService.addNewLibro(
+			groupId, companyId, userId, userName, nombre, titulo);
+	}
+
+	@Override
 	public void clearEscritorLibros(long escritorId) {
 		_libroLocalService.clearEscritorLibros(escritorId);
 	}

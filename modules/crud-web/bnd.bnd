@@ -1,0 +1,4 @@
+Bundle-Name: crud-web
+Bundle-SymbolicName: com.sinensia.web
+Bundle-Version: 1.0.0
+Export-Package: com.sinensia.web.constants

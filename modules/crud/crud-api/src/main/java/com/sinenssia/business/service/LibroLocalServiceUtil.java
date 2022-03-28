@@ -74,6 +74,14 @@ public class LibroLocalServiceUtil {
 		return getService().addLibro(libro);
 	}
 
+	public static void addNewLibro(
+		long groupId, long companyId, long userId, String userName,
+		String nombre, String titulo) {
+
+		getService().addNewLibro(
+			groupId, companyId, userId, userName, nombre, titulo);
+	}
+
 	public static void clearEscritorLibros(long escritorId) {
 		getService().clearEscritorLibros(escritorId);
 	}
