@@ -1,0 +1,10 @@
+Bundle-Name: crud-api
+Bundle-SymbolicName: com.sinenssia.business.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.sinenssia.business.exception,\
+	com.sinenssia.business.model,\
+	com.sinenssia.business.service,\
+	com.sinenssia.business.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../crud-service/service.xml

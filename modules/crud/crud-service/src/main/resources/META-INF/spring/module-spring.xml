@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="com.sinenssia.business.service.impl.EscritorLocalServiceImpl" id="com.sinenssia.business.service.EscritorLocalService" />
+	<bean class="com.sinenssia.business.service.persistence.impl.EscritorPersistenceImpl" id="com.sinenssia.business.service.persistence.EscritorPersistence" parent="basePersistence" />
+	<bean class="com.sinenssia.business.service.impl.LibroLocalServiceImpl" id="com.sinenssia.business.service.LibroLocalService" />
+	<bean class="com.sinenssia.business.service.persistence.impl.LibroPersistenceImpl" id="com.sinenssia.business.service.persistence.LibroPersistence" parent="basePersistence" />
+</beans>
