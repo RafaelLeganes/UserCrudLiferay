@@ -24,7 +24,7 @@ import com.sinenssia.business.service.base.LibroLocalServiceBaseImpl;
 public class LibroLocalServiceImpl extends LibroLocalServiceBaseImpl {
 	
 	public void addNewLibro(long groupId, long companyId, long userId,
-			String userName, String nombre, String titulo
+			String userName, String titulo, String genero
 			) {
 			final Libro libro = new LibroImpl();
 			libro.setLibroId(counterLocalService.increment());
@@ -33,9 +33,11 @@ public class LibroLocalServiceImpl extends LibroLocalServiceBaseImpl {
 			libro.setUserId(userId);
 			libro.setUserName(userName);
 			libro.setTitulo(titulo);
+			libro.setGenero(genero);
 
 			addLibro(libro);
 			//Cuando hagamos un build este método se generará
 			//LibroLocalServiceUtil
 	}
+	
 }

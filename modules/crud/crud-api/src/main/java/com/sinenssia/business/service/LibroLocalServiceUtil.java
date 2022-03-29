@@ -76,10 +76,10 @@ public class LibroLocalServiceUtil {
 
 	public static void addNewLibro(
 		long groupId, long companyId, long userId, String userName,
-		String nombre, String titulo) {
+		String titulo, String genero) {
 
 		getService().addNewLibro(
-			groupId, companyId, userId, userName, nombre, titulo);
+			groupId, companyId, userId, userName, titulo, genero);
 	}
 
 	public static void clearEscritorLibros(long escritorId) {
